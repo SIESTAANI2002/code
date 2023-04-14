@@ -23,7 +23,7 @@ try:
     OWNER = config("OWNER", default="5074446156")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -c:v libx265 -pix_fmt yuv420p10le -preset medium -s 1280x720 -crf 24 -c:a libopus -ac 2 -vbr 2  -ab 128k -c:s copy -metadata title="Encoded By Ani Animesh" -metadata:s:0 title="Presented By Anime Sakura" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.Co" -metadata:s:s:0 title="Anime Sakura" -metadata:s:s:1 title="@Ani_Animesh" -metadata:s:s:2 title="AnimeSakura.co" "{}"',
+        default='ffmpeg -i "{}" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -c:v libx265 -pix_fmt yuv420p10le -preset medium -s 1280x720 -crf 21.2 -c:a aac -b:a 128k -c:s copy -metadata title="Encoded By Ani Animesh" -metadata:s:0 title="Presented By Anime Sakura" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.Co" -metadata:s:s:0 title="Anime Sakura" -metadata:s:s:1 title="@Ani_Animesh" -metadata:s:s:2 title="AnimeSakura.co" "{}"',
     )
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02.jpg"
