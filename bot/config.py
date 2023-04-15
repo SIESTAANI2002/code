@@ -23,7 +23,7 @@ try:
     OWNER = config("OWNER", default="5074446156")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -c:v libx265 -pix_fmt yuv420p10le -preset medium -vf scale=1280:720,"drawtext=fontfile=/content/drive/MyDrive/Font/A.ttf:text=Encoded By @Ani_Animesh:x=1040:y=650:fontsize=10:fontcolor=white:enable=between(t\,200\,460)" -crf 21.4 -x265-params frame-threads=4:bframes=8:psy-rd=1:aq-mode=3:aq-strength=0.8:deblock=1,1 -c:a aac -b:a 112k -c:s copy -metadata title="Presented By Ani Animesh | Anime Sakura" -metadata author="AnimeSakura.co" -metadata copyright="Copyright 2023 Me" -metadata encoded_by="Ani Animesh" -metadata:s:0 title="Episode Unknown xD" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.co" -metadata:s:s:0 title="AnimeSakura.co" -metadata:s:s:1 title="@Ani_Animesh" "{}"',
+        default='ffmpeg -i "{}" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -c:v libx265 -pix_fmt yuv420p10le -preset medium -vf scale=1280:720,"drawtext=fontfile=/content/drive/MyDrive/Font/A.ttf:text=Encoded By @Ani_Animesh:x=1040:y=650:fontsize=10:fontcolor=white:enable=between(t\,200\,460)" -crf 22.2 -x265-params bframes=8:psy-rd=1:aq-mode=3:aq-strength=0.8:deblock=1,1 -c:a aac -b:a 112k -c:s copy -metadata title="Presented By Ani Animesh | Anime Sakura" -metadata author="AnimeSakura.co" -metadata copyright="Copyright 2023 Me" -metadata encoded_by="Ani Animesh" -metadata:s:0 title="Episode Unknown xD" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.co" -metadata:s:s:0 title="AnimeSakura.co" -metadata:s:s:1 title="@Ani_Animesh" "{}"',
     )
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/a615291ef3f9f361e9b12.jpg"
