@@ -18,12 +18,12 @@ from decouple import config
 try:
     APP_ID = config("APP_ID", default=15681388, cast=int)
     API_HASH = config("API_HASH", default="446b56944f74f6b7688175d48cdfa881")
-    BOT_TOKEN = "6216732508:AAGp2unWzGSS1I0FrSVYeAlxAVehTbfES3o"
+    BOT_TOKEN = "6130252508:AAF3L43Ry6ttkEQKtLAzQ9u23kPvefLbHWk"
     DEV = 5074446156
     OWNER = config("OWNER", default="5074446156")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -map 0:v? -map 0:a? -map 0:s? -c:v libx265 -pix_fmt yuv420p10le -preset medium -color_primaries 1 -color_range 1 -color_trc 1 -colorspace 1 -vf scale=1920:1080,"drawtext=fontfile=/content/drive/MyDrive/Font/A.ttf:text=Encoded By @Ani_Animesh:x=1680:y=980:fontsize=10:fontcolor=white:enable=between(t\,200\,440)" -x265-params  me=3:subme=3:aq-mode=3:aq-strength=1:deblock=0,-1:psy-rd=1.20:psy-rdoq=1:merange=57:bframes=8:b-adapt=2:frame-threads=5:no-info=1 -crf 22 -c:a aac -b:a 112k -c:s copy -metadata title="Presented By Ani Animesh | Anime Sakura" -metadata author="AnimeSakura.co" -metadata copyright="Copyright 2023 Me" -metadata encoded_by="Lolikiller #Sakura_Gang" -metadata:s:0 title="Episode Unknown xD" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.co" -metadata:s:s:0 title="AnimeSakura.co" -metadata:s:s:1 title="@Ani_Animesh" "{}"',
+        default='ffmpeg -i "{}" -map 0:v? -map 0:a? -map 0:s? -c:v libx265 -pix_fmt yuv420p10le -preset medium -color_primaries 1 -color_range 1 -color_trc 1 -colorspace 1 -vf scale=1920:1080,"drawtext=fontfile=/content/drive/MyDrive/Font/A.ttf:text=Encoded By @Ani_Animesh:x=1680:y=980:fontsize=10:fontcolor=white:enable=between(t\,200\,440)" -x265-params bframes=8:psy-rd=1:aq-mode=3:aq-strength=0.8:deblock=1,1:frame-threads=5:no-info=1 -crf 22 -c:a aac -b:a 112k -c:s copy -metadata title="Presented By Ani Animesh | Anime Sakura" -metadata author="AnimeSakura.co" -metadata copyright="Copyright 2023 Me" -metadata encoded_by="Lolikiller #Sakura_Gang" -metadata:s:0 title="Episode Unknown xD" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.co" -metadata:s:s:0 title="AnimeSakura.co" -metadata:s:s:1 title="@Ani_Animesh" "{}"',
     )
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/a615291ef3f9f361e9b12.jpg"
