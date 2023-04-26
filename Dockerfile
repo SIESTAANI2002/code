@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN pip install --upgrade pip
 RUN apt-get install wget -y -f
+RUN apt-get install git -y
 RUN apt install -y ffmpeg
 
 copy . .
