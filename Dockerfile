@@ -9,7 +9,7 @@ RUN pip install --upgrade pip
 RUN apt-get install wget -y -f
 RUN apt-get install git -y
 RUN add-apt-repository ppa:savoury1/ffmpeg4 -y
-RUN apt full-upgrade
+RUN apt full-upgrade -y
 
 copy . .
 RUN pip3 install -r requirements.txt
